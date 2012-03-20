@@ -9,10 +9,11 @@ SOURCES += ${SOURCE_DIR}/tree_node.cpp
 TEST_LIB_DIRS = -Ltest/lib
 TEST_LIBS = -lgtest -lgmock -lpthread
 
-TEST_INCLUDE_DIRS = -Itest/include
+TEST_INCLUDE_DIRS = -Itest/include -Itest/src
 
 TEST_SOURCE_DIR = test/src
 TEST_SOURCES += ${TEST_SOURCE_DIR}/gtest_main.cc
+TEST_SOURCES += ${TEST_SOURCE_DIR}/tree_node_ut.cpp
 
 
 .PHONY : tests build clean tools clean_tools
