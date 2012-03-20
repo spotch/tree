@@ -15,7 +15,7 @@ TEST_SOURCE_DIR = test/src
 TEST_SOURCES += ${TEST_SOURCE_DIR}/gtest_main.cc
 
 
-.PHONY : tests
+.PHONY : tests build clean tools
 
 default : tests
 
@@ -29,3 +29,8 @@ tests :
 clean :
 	rm -rf ./tree
 	rm -rf ./tree.test
+
+tools :
+	make -C ./tools/
+	make -C ./tools/ install
+	
