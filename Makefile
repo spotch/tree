@@ -1,5 +1,5 @@
 
-INCLUDE_DIRS = -Isrc
+INCLUDE_DIRS = -Isrc -Iinclude
 
 SOURCE_DIR = src
 SOURCES += ${SOURCE_DIR}/tree_node.cpp
@@ -23,7 +23,7 @@ build :
 	g++ ${INCLUDE_DIRS} ${SOURCES} -o tree
 
 tests :
-	g++ ${TEST_LIB_DIRS} ${TEST_LIBS} ${TEST_INCLUDE_DIRS} ${INCLUDE_DIRS} ${SOURCES} ${TEST_SOURCES} -o tree.test
+	g++ ${TEST_INCLUDE_DIRS} ${INCLUDE_DIRS} ${SOURCES} ${TEST_SOURCES} ${TEST_LIB_DIRS} ${TEST_LIBS} -o tree.test
 	./tree.test
 
 clean :
