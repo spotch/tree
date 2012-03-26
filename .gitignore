@@ -1,0 +1,4 @@
+test/lib
+tools/*.o
+tools/*.a
+tree.test

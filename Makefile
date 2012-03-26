@@ -2,7 +2,7 @@
 INCLUDE_DIRS = -Isrc -Iinclude
 
 SOURCE_DIR = src
-SOURCES += ${SOURCE_DIR}/tree_node.cpp
+SOURCES += ${SOURCE_DIR}/node.cpp
 
 
 
@@ -13,7 +13,7 @@ TEST_INCLUDE_DIRS = -Itest/include -Itest/src
 
 TEST_SOURCE_DIR = test/src
 TEST_SOURCES += ${TEST_SOURCE_DIR}/gtest_main.cc
-TEST_SOURCES += ${TEST_SOURCE_DIR}/tree_node_ut.cpp
+TEST_SOURCES += ${TEST_SOURCE_DIR}/node_ut.cpp
 
 
 .PHONY : tests build clean tools clean_tools
