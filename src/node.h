@@ -6,7 +6,8 @@
 class Node : public INode
 {
 public:
-	~Node();
+
+	void SetIndex(int index);
 
 private:
 };
