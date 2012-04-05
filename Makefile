@@ -15,6 +15,7 @@ TEST_INCLUDE_DIRS = -Itest/include -Itest/src
 TEST_SOURCE_DIR = test/src
 TEST_SOURCES += ${TEST_SOURCE_DIR}/gtest_main.cc
 TEST_SOURCES += ${TEST_SOURCE_DIR}/index_to_node_converter_ut.cpp
+TEST_SOURCES += ${TEST_SOURCE_DIR}/pool_ut.cpp
 
 .PHONY : tests build clean tools clean_tools
 
